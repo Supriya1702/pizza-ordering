@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("https://previews.123rf.com/images/natavkusidey/natavkusidey1411/natavkusidey141100186/33398773-pizza-with-bacon-mozzarella-and-spinach-in-a-dark-woody-background-tinting-selective-focus-on-spinac.jpg");
+
+  min-height: 700px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  height:700px;
+  padding: 15px;
+  background-color:;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 22px 0 22px 0;
+  border: none;
+  background: white;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: white;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+.sig {
+    background-color: black;
+    color: white;
+	padding: 15px;
+	border: none;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0.9;
+}
+.sig:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+
+
+<div class="bg-img">
+  <form action="/action_page.php" class="container">
+    <h1><font color="white">Login</font></h1>
+
+    <label for="email"><font color="white"><b>Email</b></font></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><font color="white"><b>Password</b></font></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+	<center><button type="submit" class="sig" ><a href="menu.html">Order Now!</a></button></center>
+
+  </form>
+</div>
+</body>
+</html> 
